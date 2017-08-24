@@ -66,7 +66,7 @@ function sideNavigation($timeout) {
             });
         }
     };
-};
+}
 
 /**
  * responsibleVideo - Directive for responsive video
@@ -80,7 +80,7 @@ function responsiveVideo() {
             video
                 .attr('data-aspectRatio', video.height() / video.width())
                 .removeAttr('height')
-                .removeAttr('width')
+                .removeAttr('width');
 
             //We can use $watch on $window.innerWidth also.
             $(window).resize(function() {
